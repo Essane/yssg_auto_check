@@ -100,6 +100,7 @@ def commit_act_form():
 
 
 if __name__ == '__main__':
+    print("test runs")
     result = False
     msg = None
     count = 0

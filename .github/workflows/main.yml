@@ -1,4 +1,4 @@
-name: yssg-check-in
+name: check-in
 
 on:
   push:

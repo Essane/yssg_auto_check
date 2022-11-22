@@ -99,8 +99,9 @@ def commit_act_form():
         return False, str(err.args)
 
 
-if __name__ == '__main__':
+def run():
     print("test runs")
+    notify("打卡通知", "开始打卡")
     result = False
     msg = None
     count = 0
@@ -117,3 +118,7 @@ if __name__ == '__main__':
         msg = str(err.args)
     finally:
         notify("打卡通知", msg)
+
+
+if __name__ == '__main__':
+    run()

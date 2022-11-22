@@ -9,8 +9,8 @@ from requests.adapters import HTTPAdapter
 from encrypt import EncryptClass
 
 barkToken = os.environ['BARKTOKEN']
-token = os.environ['token']
-phone = os.environ['phone']
+token = os.environ['TOKEN']
+phone = os.environ['PHONE']
 
 session = requests.session()
 session.trust_env = False

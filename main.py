@@ -100,15 +100,13 @@ def commit_act_form():
 
 
 def run():
-    print("test runs")
-    notify("打卡通知", "开始打卡")
     result = False
     msg = None
-    count = 0
     try:
-        while count < 5:
+        for count in range(5):
             count += 1
             result, msg = commit_act_form()
+            notify("打卡通知", "第%d打卡：%s" % (count, result))
             if result:
                 msg = "打卡成功!"
                 break
